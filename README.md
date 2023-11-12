@@ -1,6 +1,6 @@
 # React Captcha Verification
 
-This is a simple text-based captcha verifier. Built with React + TypeScript. Leveraging Vite.
+A lightweight text-based captcha verifier. Built with React + TypeScript. Leveraging Vite.
 
 ### SETUP
 (1) Install packages
