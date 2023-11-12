@@ -7,22 +7,22 @@ import { Button } from "../Button/Button"
 export const CaptchaVerification: React.FC = () => {
   const generatedValue = Math.random().toString(36).substring(2, 8)
   const [generatedCaptcha, setGeneratedCaptcha] = useState(generatedValue)
-  const [enteredCaptcha, setEnteredCaptcha] = useState("")
-  const [status, setStatus] = useState("")
+  const [enteredCaptcha, setEnteredCaptcha] = useState('')
+  const [status, setStatus] = useState('')
 
   const generate = () => {
-    if (status === "Verified") {
-      setStatus("")
+    if (status === 'Verified') {
+      setStatus('')
     }
     setGeneratedCaptcha(generatedValue)
-    setEnteredCaptcha("")
+    setEnteredCaptcha('')
   }
 
   const verify = () => {
     if (enteredCaptcha === generatedCaptcha) {
-      setStatus("Verified")
+      setStatus('Verified')
     } else {
-      setStatus("Incorrect")
+      setStatus('Incorrect')
       generate()
     }
   }
@@ -34,7 +34,7 @@ export const CaptchaVerification: React.FC = () => {
       <CaptchaInput
         onChange={(e) => setEnteredCaptcha(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === "Enter") {
+          if (e.key === 'Enter') {
             e.preventDefault()
             verify()
           }
@@ -42,7 +42,7 @@ export const CaptchaVerification: React.FC = () => {
         value={enteredCaptcha}
       />
       <Button
-        buttonText={"Verify"}
+        buttonText='Verify'
         disabled={!enteredCaptcha.length}
         onClick={verify}
       />
