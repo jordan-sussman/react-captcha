@@ -27,8 +27,6 @@ export const CaptchaVerification: React.FC = () => {
     }
   }
 
-  console.log(status)
-
   return (
     <div className='wrapper'>
       <StatusText status={status} />
