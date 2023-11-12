@@ -5,6 +5,6 @@ This is a simple text-based captcha verifier. Built with React + TypeScript. Lev
 ### SETUP
 (1) Install packages
 ```npm install```
-<br>
+
 (2) Start Server
 ```npm run dev```
