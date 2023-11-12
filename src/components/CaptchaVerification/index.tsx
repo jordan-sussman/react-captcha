@@ -47,7 +47,10 @@ export const CaptchaVerification: React.FC = () => {
         onClick={verify}
       />
       <div>
-        <Button buttonText='Generate New Code' onClick={generate} />
+        <Button 
+          buttonText='Generate New Code' 
+          onClick={generate}
+        />
       </div>
     </div>
   )
