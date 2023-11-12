@@ -1,8 +1,10 @@
 # React Captcha Verification
 
-Built using Vite.
+This is a simple text-based captcha verifier. Built with React + TypeScript. Leveraging Vite.
 
-(1) Go to main directory
-(2) Run `npm install`
-(3) Run `npm run dev`
-(4) Navigate to local server
+### SETUP
+(1) Install packages
+```npm install```
+<br>
+(2) Start Server
+```npm run dev```
